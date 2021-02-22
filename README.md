@@ -20,14 +20,6 @@ Generate a knowledge-base for Hebrew word-prediction system, based on Google 3-G
 …
 ```
 
-# Table of contents
-<!--ts-->
-   *[Abstract](#Abstract)
-   * [Probability Function](#Probability-Function)
-   * [Program flow](#Program-flow)  
-   * [How to run](#How-to-run)
-<!--te-->
-
 Probability Function
 =========
 In this project, we will implement a held out method, named deleted estimation.
@@ -61,17 +53,17 @@ The program consist of 5 Map-reduce steps as follows:
 
 How to run
 =========
-Please make sure you have maven and Amazon CLI installed on your machine.
- 1.Clone the projet.
-2.Update the credentials file on your machine with your AWS credentials.
-3.Create bucket on s3.
- 3.Open the file AppConfig.java and change the bucketname variable to the
-   hold the adress of the bucket you created.
- 4.Make a jar file- in the project folder run the command
-   "mvn package". This will create 2 jar files at Target folder.
- 5.Upload aws-jar-with-dependencies.jar to the bucket.
- 6.Go to Target folder and run: "Java -jar local-jar-with-dependencies.jar"
-   *The output of the program will be saved in the bucket
-     under the folder output4.
+Please make sure you have maven and Amazon CLI installed on your machine.<br/>
+ 1.Clone the projet.<br/>
+2.Update the credentials file on your machine with your AWS credentials.<br/>
+3.Create bucket on s3.<br/>
+ 3.Open the file AppConfig.java and change the bucketname variable to the<br/>
+   hold the adress of the bucket you created.<br/>
+ 4.Make a jar file- in the project folder run the command<br/>
+   "mvn package". This will create 2 jar files at Target folder.<br/>
+ 5.Upload aws-jar-with-dependencies.jar to the bucket.<br/>
+ 6.Go to Target folder and run: "Java -jar local-jar-with-dependencies.jar"<br/>
+   *The output of the program will be saved in the bucket<br/>
+     under the folder output4.<br/>
 
 
